@@ -1,0 +1,10 @@
+#search-container {
+  padding: 5px 20px;
+  display: inline;
+  grid-column: 2/7;
+  width: 100%;
+}
+
+input[type=search] {
+  width: 100%;
+}/*# sourceMappingURL=search.css.map */
