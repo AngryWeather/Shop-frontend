@@ -1,10 +1,10 @@
 import "./header.css";
-import "../../reset.css";
+import Logo from "../logo/Logo";
 
 const Header = () => {
     return (
       <div className="header">
-
+        <Logo></Logo>
       </div>  
     );
 }
