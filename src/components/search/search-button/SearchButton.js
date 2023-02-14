@@ -1,3 +1,5 @@
+import "./searchButton.css";
+
 const SearchButton = () => {
     return (
         <div id="search-button">
