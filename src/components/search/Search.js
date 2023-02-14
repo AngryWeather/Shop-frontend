@@ -1,3 +1,4 @@
+import SearchButton from "./search-button/SearchButton";
 import "./search.css";
 
 const Search = () => {
@@ -6,6 +7,7 @@ const Search = () => {
             <form>
                 <label htmlFor="search"></label>
                 <input type="search"></input>
+                <SearchButton></SearchButton>
             </form>
         </div>
     );
