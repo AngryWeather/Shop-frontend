@@ -1,7 +1,9 @@
 const Category = props => {
     return (
         <li className="category">
-            {props.category}
+            <a href={`/${props.category}`}>
+                {props.category}
+            </a>
         </li>
     );
 }
