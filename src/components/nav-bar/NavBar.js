@@ -3,10 +3,7 @@ import Categories from "../categories/categories";
 const NavBar = () => {
     return (
         <nav>
-            <li>
-                <Categories></Categories>
-                <ul></ul>
-            </li>
+            <Categories></Categories>
         </nav>
     );
 }

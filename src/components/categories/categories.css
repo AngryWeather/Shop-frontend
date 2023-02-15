@@ -1,0 +1,10 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.category {
+  color: white;
+  list-style-type: none;
+}/*# sourceMappingURL=categories.css.map */
