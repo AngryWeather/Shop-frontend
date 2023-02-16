@@ -1,12 +1,14 @@
 .product {
   list-style-type: none;
-  max-height: 400px;
   display: flex;
 }
 
 .products {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 
 .data {
@@ -14,7 +16,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 10px;
-  padding-left: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -23,4 +26,10 @@
 
 .description {
   font-size: 0.7rem;
+}
+
+@media (min-width: 1000px) {
+  .product {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=product.css.map */
