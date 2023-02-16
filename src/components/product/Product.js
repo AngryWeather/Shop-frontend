@@ -11,7 +11,6 @@ const Product = props => {
                 <li class="price">{props.price}$</li>
                 <li class="description">{props.description}</li>
             </div>
-           
         </ol>
     );
 }

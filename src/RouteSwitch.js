@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import App from "./App";
-import Electronics from "./components/electronics/Electronics";
+import Electronics from "./components/product-categories/electronics/Electronics";
 
 const RouteSwitch = () => {
     return (
