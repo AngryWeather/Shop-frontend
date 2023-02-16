@@ -9,7 +9,17 @@ const Electronics = () => {
             const json = await response.json();
             setElectronics(json);
         }
-    })
+        
+        loadElectronics().catch(console.error);
+    }, []);
 }
+
+return (
+    <div className="products">
+        {products.map((product) => {
+            
+        })}
+    </div>
+);
 
 export default Electronics;
