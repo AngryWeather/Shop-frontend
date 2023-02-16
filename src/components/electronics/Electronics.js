@@ -17,7 +17,8 @@ const Electronics = () => {
     return (
         <div className="products">
             {electronics.map((product) => (
-                <Product title={product.title}></Product>
+                <Product title={product.title} price={product.price} 
+                    description = {product.description} image={product.image} key={product.id}></Product>
             ))}
         </div>
     );

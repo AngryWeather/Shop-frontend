@@ -1,8 +1,13 @@
 const Product = props => {
     return (
-        <ul className="product">
+        <ol className="product">
+            <li>
+                <img src={props.image} height="64"></img>
+            </li>
             <li>{props.title}</li>
-        </ul>
+            <li>{props.price}</li>
+            <li>{props.description}</li>
+        </ol>
     );
 }
 
