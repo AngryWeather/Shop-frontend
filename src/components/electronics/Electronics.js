@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Product from "../product/Product";
 
 const Electronics = () => {
     const [electronics, setElectronics] = useState([]);
@@ -12,14 +13,14 @@ const Electronics = () => {
         
         loadElectronics().catch(console.error);
     }, []);
-}
 
-return (
-    <div className="products">
-        {products.map((product) => {
-            
-        })}
-    </div>
-);
+    return (
+        <div className="products">
+            {electronics.map((product) => (
+                <Product title={product.title}></Product>
+            ))}
+        </div>
+    );
+};
 
 export default Electronics;
