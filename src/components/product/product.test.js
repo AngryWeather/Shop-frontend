@@ -7,14 +7,4 @@ describe("Product component", () => {
         const items = await screen.findAllByRole("listitem");
         expect(items).toHaveLength(4);
     })
-
-    // it("renders title", () => {
-    //     const {getByRole} = render(<Product title="Test Product"/>);
-    //     expect(getByRole("listitem").textContent).toBe("Test Product");
-    // }),
-
-    // it("renders price", () => {
-    //     const {getByRole} = render(<Product price="13.5"/>);
-    //     expect(getByRole("listitem").textContent).toBe("13.5");
-    // })
 })

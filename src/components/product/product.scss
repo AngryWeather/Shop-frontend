@@ -1,0 +1,26 @@
+.product {
+    list-style-type: none;
+    max-height: 400px;
+    display:flex;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.title {
+    font-weight: 200;
+}
+
+.description {
+    font-size: 0.7rem;
+}
