@@ -6,10 +6,10 @@ const Product = props => {
             <li>
                 <img src={props.image} height="128" width="128"></img>
             </li>
-            <div class="data">
-                <li class="title">{props.title}</li>
-                <li class="price">{props.price}$</li>
-                <li class="description">{props.description}</li>
+            <div className="data">
+                <li className="title">{props.title}</li>
+                <li className="price">{props.price}$</li>
+                <li className="description">{props.description}</li>
             </div>
         </ol>
     );

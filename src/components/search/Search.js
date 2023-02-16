@@ -1,12 +1,23 @@
+import { useState } from "react";
 import SearchButton from "./search-button/SearchButton";
 import "./search.css";
 
-const Search = () => {
+function Search() {
+    const [value, setValue] = useState("");
+
+    const handleChange = event => {
+        setValue(event.target.value);
+    }
+
+    const handleSubmit = event => {
+        event.preventDefault();
+    }
+
     return(
         <div id="search-container">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="search"></label>
-                <input type="search"></input>
+                <input type="search" value={value} onChange={handleChange}></input>
                 <SearchButton></SearchButton>
             </form>
         </div>
