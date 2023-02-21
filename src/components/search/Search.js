@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import Product from "../product/Product";
 import SearchButton from "./search-button/SearchButton";
 import "./search.css";
+import Results from "../results/Results";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
     const [value, setValue] = useState("");
     const [products, setProducts] = useState([]);
     const [match, setMatch] = useState([]);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [result, setResult] = useState({});
+    const navigate = useNavigate("/results");
 
     useEffect(() => {
         const loadAllProducts = async () => {
@@ -20,7 +24,18 @@ function Search() {
     }, []);
 
     useEffect(() => {
-       setIsSubmitted(true);
+        // const product = document.querySelector(".products");
+        console.log(match);
+        // setResult(<div className="results">
+        //     {match.map((product) => (
+        //         <Product title={product.title} price={product.price} description={product.description}
+        //         image={product.image} id={product.id}></Product>
+        //     ))}
+        // </div>)
+
+        if (match.length > 0) {
+            navigate("/results", {state: match});
+        }
     }, [match])
 
     const search =  () => {
@@ -33,6 +48,7 @@ function Search() {
 
     const handleSubmit = event => {
         event.preventDefault();
+        setIsSubmitted(true);
         search();
     }
 
@@ -43,7 +59,7 @@ function Search() {
                 <input type="search" value={value} onChange={handleChange}></input>
                 <SearchButton></SearchButton>
             </form>
-            {/* {isSubmitted && <Product></Product>} */}
+            {/* {isSubmitted && <Results></Results>} */}
         </div>
     );
 }

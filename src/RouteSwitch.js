@@ -4,6 +4,7 @@ import Electronics from "./components/product-categories/electronics/Electronics
 import Jewelery from "./components/product-categories/jewelery/Jewelery";
 import MensClothing from "./components/product-categories/mens-clothing/MensClothing";
 import WomensClothing from "./components/product-categories/womens-clothing/WomensClothing";
+import Results from "./components/results/Results";
 
 const RouteSwitch = () => {
     return (
@@ -14,6 +15,7 @@ const RouteSwitch = () => {
                 <Route path="/jewelery" element={<Jewelery/>}></Route>
                 <Route path="/men's clothing" element={<MensClothing/>}></Route>
                 <Route path="/women's clothing" element={<WomensClothing/>}></Route>
+                <Route path="/results" element={<Results/>}></Route>
             </Routes>
         </BrowserRouter>
     )
