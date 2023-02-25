@@ -1,5 +1,5 @@
 import "./navBar.css";
-import Categories from "../categories/categories";
+import Categories from "../categories/Categories";
 const NavBar = () => {
     return (
         <nav>
