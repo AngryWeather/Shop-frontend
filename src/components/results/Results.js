@@ -9,7 +9,7 @@ const Results = () => {
         <div className="products">
             {location.state.map((product) => (
                 <Product title={product.title} price={product.price} description={product.description}
-                    image={product.image} id={product.id}></Product>
+                    image={product.image} key={product.id}></Product>
             ))}
         </div>
     );
