@@ -1,11 +1,11 @@
-
+@import "../../scss-variables/variables";
 
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 100%;
     min-height: 60px;
-    background-color: rgb(33, 34, 52);
+    background-color: $primary-blue;
     align-items: center;
     overflow-x: hidden;
 }

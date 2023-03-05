@@ -1,6 +1,8 @@
+@import "../../scss-variables/variables";
+
 nav {
     min-height: 30px;
-    background-color:  rgb(63, 64, 82);
+    background-color:  $secondary-blue;
 }
 
 ul {

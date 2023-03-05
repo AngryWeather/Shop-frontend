@@ -12,7 +12,7 @@ const Product = props => {
                 <li className="price">{props.price}$</li>
                 <li className="description">{props.description}</li>
             </div>
-            <BuyButton className="buy-button"></BuyButton>
+            <BuyButton></BuyButton>
         </ol>
     );
 }

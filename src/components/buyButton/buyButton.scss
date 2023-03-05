@@ -1,0 +1,10 @@
+@import "../../scss-variables/variables";
+
+.buy-button {
+    height: 2rem;
+    font-size: 1rem;
+    margin-left: auto;
+    align-self: center;
+    background-color: $secondary-blue;
+    color: white;
+}
