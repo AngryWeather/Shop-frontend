@@ -20,7 +20,7 @@ const Categories = () => {
             {/* category doesn't have a unique key so need to use index */}
             {categories.map((category, index) => (
                 <ul>
-                    <Category category={category} key={index}></Category>
+                    <Category category={category} key={category}></Category>
                 </ul>
             ))}
         </div>

@@ -5,4 +5,10 @@
   align-self: center;
   background-color: rgb(63, 64, 82);
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .buy-button {
+    margin: auto;
+  }
 }/*# sourceMappingURL=buyButton.css.map */

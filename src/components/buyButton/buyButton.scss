@@ -8,3 +8,9 @@
     background-color: $secondary-blue;
     color: white;
 }
+
+@media (max-width: 1000px) {
+    .buy-button {
+        margin: auto;
+    }
+}

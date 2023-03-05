@@ -10,6 +10,7 @@
     max-width: 100%;
     overflow-x: hidden;
     padding-top: 50px;
+    gap: 2rem;
 }
 
 .data {
@@ -29,8 +30,13 @@
     font-size: 0.7rem;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .product {
         max-width: 80%;
+        flex-direction: column;
+    }
+
+    li:nth-child(1) {
+        margin: auto;
     }
 }
