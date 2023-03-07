@@ -1,6 +1,7 @@
 import "./buyButton.css";
 
-const BuyButton = () => {
+const BuyButton = props => {
+    console.log(props);
     return (
         <button className="buy-button">
             Buy
