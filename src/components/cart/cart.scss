@@ -1,0 +1,12 @@
+@import "../../scss-variables/variables";
+
+p {
+    color: $light-gray;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: $header-top-bottom-padding $header-left-right-padding;
+}
+
+.cart {
+    grid-column: 11 / 12;
+}
