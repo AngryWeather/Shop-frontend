@@ -1,4 +1,4 @@
-import Category from "./category"
+import Category from "./Category"
 import { render } from "@testing-library/react";
 
 describe("Category component", () => {
