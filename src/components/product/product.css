@@ -30,7 +30,7 @@
   font-size: 0.7rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .product {
     max-width: 80%;
     flex-direction: column;
