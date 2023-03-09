@@ -7,21 +7,28 @@ import Jewelery from "./components/product-categories/jewelery/Jewelery";
 import MensClothing from "./components/product-categories/mens-clothing/MensClothing";
 import WomensClothing from "./components/product-categories/womens-clothing/WomensClothing";
 import Results from "./components/results/Results";
+import Main from "./components/main/Main";
+import Header from "./components/header/Header";
+import NavBar from "./components/nav-bar/NavBar";
 
 const RouteSwitch = () => {
     return (
         <BrowserRouter>
-            <App></App>
-            <Routes>
-                <Route path="/" element={<Homepage/>}></Route>
-                <Route path="/electronics" element={<Electronics/>}></Route>
-                <Route path="/jewelery" element={<Jewelery/>}></Route>
-                <Route path="/men's clothing" element={<MensClothing/>}></Route>
-                <Route path="/women's clothing" element={<WomensClothing/>}></Route>
-                <Route path="/results" element={<Results/>}></Route>
-                <Route path="/cart" element={<Cart/>}></Route>
-
-            </Routes>
+        <Header></Header>
+        <NavBar></NavBar>
+        <Main>
+            {/* <Routes> 
+                        <Route path="/" element={<Homepage/>}></Route>
+                        <Route path="/electronics" element={<Electronics/>}></Route>
+                        <Route path="/jewelery" element={<Jewelery/>}></Route>
+                        <Route path="/men's clothing" element={<MensClothing/>}></Route>
+                        <Route path="/women's clothing" element={<WomensClothing/>}></Route>
+                        <Route path="/results" element={<Results/>}></Route>
+                        <Route path="/cart" element={<Cart/>}></Route>
+                        
+            </Routes> */}
+            </Main>
+            
         </BrowserRouter>
     )
 }
