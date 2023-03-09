@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
 import RouteSwitch from "./RouteSwitch";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

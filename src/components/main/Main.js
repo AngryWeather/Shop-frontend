@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Homepage from "../homepage/Homepage";
 import Electronics from "../product-categories/electronics/Electronics";
 import Jewelery from "../product-categories/jewelery/Jewelery";
@@ -8,7 +8,6 @@ import Results from "../results/Results";
 import Cart from "../cart/Cart";
 
 const Main = props => {
-    const location = useLocation();
 
     return (
         <main>
