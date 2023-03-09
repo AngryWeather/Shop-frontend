@@ -6,5 +6,4 @@ You can browse products by categories or by using the search bar.
 Use "npm start" to start.
 
 ToDo
-- display all products on homepage
 - store bought items in cart
