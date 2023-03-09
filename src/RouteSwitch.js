@@ -14,21 +14,7 @@ import NavBar from "./components/nav-bar/NavBar";
 const RouteSwitch = () => {
     return (
         <BrowserRouter>
-        <Header></Header>
-        <NavBar></NavBar>
-        <Main>
-            {/* <Routes> 
-                        <Route path="/" element={<Homepage/>}></Route>
-                        <Route path="/electronics" element={<Electronics/>}></Route>
-                        <Route path="/jewelery" element={<Jewelery/>}></Route>
-                        <Route path="/men's clothing" element={<MensClothing/>}></Route>
-                        <Route path="/women's clothing" element={<WomensClothing/>}></Route>
-                        <Route path="/results" element={<Results/>}></Route>
-                        <Route path="/cart" element={<Cart/>}></Route>
-                        
-            </Routes> */}
-            </Main>
-            
+            <App></App>
         </BrowserRouter>
     )
 }
