@@ -17,8 +17,7 @@ const Categories = () => {
 
     return (
         <div className="categories">
-            {/* category doesn't have a unique key so need to use index */}
-            {categories.map((category, index) => (
+            {categories.map((category) => (
                 <ul>
                     <Category category={category} key={category}></Category>
                 </ul>

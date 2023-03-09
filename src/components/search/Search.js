@@ -21,6 +21,7 @@ function Search() {
 
     useEffect(() => {
 
+        // match is empty on the first render
         if (match.length > 0) {
             navigate("/results", {state: match});
         }

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import App from "./App";
+import Cart from "./components/cart/Cart";
 import Electronics from "./components/product-categories/electronics/Electronics";
 import Jewelery from "./components/product-categories/jewelery/Jewelery";
 import MensClothing from "./components/product-categories/mens-clothing/MensClothing";
@@ -16,6 +17,8 @@ const RouteSwitch = () => {
                 <Route path="/men's clothing" element={<MensClothing/>}></Route>
                 <Route path="/women's clothing" element={<WomensClothing/>}></Route>
                 <Route path="/results" element={<Results/>}></Route>
+                <Route path="/cart" element={<Cart/>}></Route>
+
             </Routes>
         </BrowserRouter>
     )
