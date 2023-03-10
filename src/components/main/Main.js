@@ -12,7 +12,7 @@ const Main = props => {
     return (
         <main>
             <Routes> 
-                <Route path="/" element={<Homepage/>}></Route>
+                <Route path="/shop-frontend" element={<Homepage/>}></Route>
                 <Route path="/electronics" element={<Electronics/>}></Route>
                 <Route path="/jewelery" element={<Jewelery/>}></Route>
                 <Route path="/men's clothing" element={<MensClothing/>}></Route>
