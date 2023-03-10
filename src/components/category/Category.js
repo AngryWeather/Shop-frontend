@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import "./category.css";
 
 const Category = props => {
     
     return (
         <li className="category">
-            <a href={`/${props.category}`}>
+            <Link to={`/${props.category}`}>
                 {props.category}
-            </a>
+            </Link>
         </li>
     );
 }
