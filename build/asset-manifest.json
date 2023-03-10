@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AngryWeather/Shop-frontend/static/css/main.8f9c6ad3.css",
+    "main.js": "/AngryWeather/Shop-frontend/static/js/main.6f1ac3c2.js",
+    "index.html": "/AngryWeather/Shop-frontend/index.html",
+    "main.8f9c6ad3.css.map": "/AngryWeather/Shop-frontend/static/css/main.8f9c6ad3.css.map",
+    "main.6f1ac3c2.js.map": "/AngryWeather/Shop-frontend/static/js/main.6f1ac3c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f9c6ad3.css",
+    "static/js/main.6f1ac3c2.js"
+  ]
+}
