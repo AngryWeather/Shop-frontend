@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { ProductContext } from "../../ProductContext";
 import "./cart.css";
 
 const Cart = () => {
-    console.log("CART");
-    const [products, setProducts] = useState([]);
+
 
     return (
         <div className="cart">
-           <a href="/cart">Cart</a>
+           <Link to="/cart">Cart</Link>
         </div>
     );
 }

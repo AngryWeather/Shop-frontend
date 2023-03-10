@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/header/Header.js";
 import Main from "./components/main/Main.js";
 import NavBar from "./components/nav-bar/NavBar.js";
@@ -7,12 +7,10 @@ import {ProductContext} from "./ProductContext.js";
 
 
 function App() {
-  const [product, setProduct] = useState({});
-  const value = {product, setProduct};
 
-  useEffect(() => {
-    console.log(product);
-  }, [product])
+  console.log("RENDER APP");
+  const [products, setProducts] = useState([]);
+  const value = {products, setProducts};
   
   return (
     <ProductContext.Provider value={value}>

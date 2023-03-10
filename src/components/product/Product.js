@@ -2,6 +2,7 @@ import BuyButton from "../buyButton/BuyButton";
 import "./product.css";
 
 const Product = props => {
+
     return (
         <ol className="product">
             <li>

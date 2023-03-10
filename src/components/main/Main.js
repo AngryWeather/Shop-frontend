@@ -5,7 +5,7 @@ import Jewelery from "../product-categories/jewelery/Jewelery";
 import MensClothing from "../product-categories/mens-clothing/MensClothing";
 import WomensClothing from "../product-categories/womens-clothing/WomensClothing";
 import Results from "../results/Results";
-import Cart from "../cart/Cart";
+import CartProducts from "../cartProducts/CartProducts";
 
 const Main = props => {
 
@@ -18,7 +18,7 @@ const Main = props => {
                 <Route path="/men's clothing" element={<MensClothing/>}></Route>
                 <Route path="/women's clothing" element={<WomensClothing/>}></Route>
                 <Route path="/results" element={<Results/>}></Route>
-                <Route path="/cart" element={<Cart/>}></Route>
+                <Route path="/cart" element={<CartProducts/>}></Route>
             </Routes>
         </main>
     );

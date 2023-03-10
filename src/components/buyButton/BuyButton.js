@@ -4,14 +4,14 @@ import "./buyButton.css";
 
 const BuyButton = props => {
     // store the product the user wants to buy
-    const {product, setProduct} = useContext(ProductContext);
+    const {products, setProducts} = useContext(ProductContext);
 
     const onClickHandler = () => {
-        setProduct(props);
+        setProducts(products.concat(props.product));
     }
 
     return (
-        <button className="buy-button" onClick={onClickHandler}>
+        <button className="buy-button" onClick={() => onClickHandler()}>
             Buy
         </button>
     );
