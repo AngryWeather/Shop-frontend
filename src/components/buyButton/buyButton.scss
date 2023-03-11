@@ -8,6 +8,16 @@
     background-color: $secondary-blue;
     color: white;
     margin-right: 3rem;
+    text-align: center;
+
+    &:active {
+        outline: $secondary-blue solid 5px;
+        outline-offset: -1px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 900px) {

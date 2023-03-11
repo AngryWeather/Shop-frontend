@@ -3,8 +3,6 @@ import Product from "../../product/Product";
 
 const Electronics = () => {
     const [electronics, setElectronics] = useState([]);
-    console.log("electronics");
-    console.log(electronics);
 
     useEffect(() => {
         const loadElectronics = async () => {

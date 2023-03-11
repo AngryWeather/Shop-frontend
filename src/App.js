@@ -7,8 +7,6 @@ import {ProductContext} from "./ProductContext.js";
 
 
 function App() {
-
-  console.log("RENDER APP");
   const [products, setProducts] = useState([]);
   const value = {products, setProducts};
   
