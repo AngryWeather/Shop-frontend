@@ -6,7 +6,7 @@ const MensClothing = () => {
 
     useEffect(() => {
         const loadMensClothing = async () => {
-            const response = await fetch("https://fakestoreapi.com/products/category/men\'s clothing");
+            const response = await fetch("https://fakestoreapi.com/products/category/men's clothing");
             const json = await response.json();
             setMensClothing(json);
         }

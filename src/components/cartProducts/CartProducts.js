@@ -1,11 +1,9 @@
 import Product from "../product/Product";
-import { useState, useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ProductContext } from "../../ProductContext";
 
 const CartProducts = () => {
-    console.log("CART");
-    const {products, setProducts} = useContext(ProductContext);
-    console.log(products);
+    const {products} = useContext(ProductContext);
 
     return (
         <div className="products">
