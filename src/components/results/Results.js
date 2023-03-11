@@ -4,6 +4,7 @@ import Product from "../product/Product";
 
 const Results = () => {
     const location = useLocation();
+    console.log(location);
 
     return (
         <div className="products">

@@ -24,6 +24,7 @@ function Search() {
         // match is empty on the first render
         if (match.length > 0) {
             navigate("/results", {state: match});
+            setMatch(0);
         }
         
     }, [match, navigate])
