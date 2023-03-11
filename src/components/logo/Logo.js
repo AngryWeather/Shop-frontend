@@ -4,7 +4,7 @@ import "./logo.css";
 const Logo = () => {
     return (
         <div id="logo">
-            <Link to="/shop-frontend"><h1>Store</h1></Link>
+            <Link to="/"><h1>Store</h1></Link>
         </div>
     );
 }
