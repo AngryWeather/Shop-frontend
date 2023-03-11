@@ -7,6 +7,16 @@ button {
     border: none;
     border-radius: 2px;
     height: 100%;
+
+    &:active {
+        outline: $light-gray solid 5px;
+        outline-offset: -1px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
 }
 
 @media screen and (max-width: 500px) {

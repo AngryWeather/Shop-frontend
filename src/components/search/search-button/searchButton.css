@@ -6,6 +6,14 @@ button {
   border-radius: 2px;
   height: 100%;
 }
+button:active {
+  outline: #CCCBAD solid 5px;
+  outline-offset: -1px;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
 
 @media screen and (max-width: 500px) {
   #search-button {
