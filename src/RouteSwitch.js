@@ -3,7 +3,7 @@ import App from "./App";
 
 const RouteSwitch = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/shop-frontend">
             <App></App>
         </BrowserRouter>
     )
