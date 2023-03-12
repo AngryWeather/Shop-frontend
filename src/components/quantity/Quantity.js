@@ -1,8 +1,10 @@
+import "./quantity.css";
+
 const Quantity = () => {
     return (
-        <div>
-            <label htmlFor="quantity">Quantity</label>
-            <input id="quantity" type="number"></input>
+        <div className="quantity">
+            <label htmlFor="quantity-bought">Quantity</label>
+            <input id="quantity-bought" type="number"></input>
         </div>
     );
 }

@@ -1,5 +1,7 @@
 import BuyButton from "../buyButton/BuyButton";
+import Quantity from "../quantity/Quantity";
 import "./product.css";
+import "../../purchase-data/purchaseData.css";
 
 const Product = props => {
 
@@ -13,7 +15,10 @@ const Product = props => {
                 <li className="price">{props.price}$</li>
                 <li className="description">{props.description}</li>
             </div>
-            <BuyButton product={props}></BuyButton>
+            <div className="purchase-data">
+                <Quantity></Quantity>
+                <BuyButton product={props}></BuyButton>
+            </div>
         </ol>
     );
 }
