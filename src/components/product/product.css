@@ -31,6 +31,10 @@
   font-size: 0.7rem;
 }
 
+.price {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 900px) {
   .product {
     max-width: 80%;
