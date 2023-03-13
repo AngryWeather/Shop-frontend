@@ -7,8 +7,6 @@ import { useState } from "react";
 const Product = props => {
     const [quantity, setQuantity] = useState(0);
 
-    console.log(quantity);
-
     return (
         <ol className="product">
             <li>
