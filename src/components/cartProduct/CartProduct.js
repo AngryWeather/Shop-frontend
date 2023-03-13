@@ -6,7 +6,7 @@ const CartProduct = props => {
             </li>
             <div className="data">
                 <li className="title">{props.title}</li>
-                <li className="price">{props.price}$</li>
+                <li className="price">{props.price * props.quantity}$</li>
                 <li className="description">{props.description}</li>
             </div>
         </ol>
