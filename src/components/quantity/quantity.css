@@ -1,0 +1,10 @@
+.quantity {
+  font-size: 0.7rem;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+#quantity-bought {
+  width: 5rem;
+}/*# sourceMappingURL=quantity.css.map */

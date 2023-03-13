@@ -5,7 +5,6 @@ import NavBar from "./components/nav-bar/NavBar.js";
 import "./reset.css";
 import {ProductContext} from "./ProductContext.js";
 
-
 function App() {
   const [products, setProducts] = useState([]);
   const value = {products, setProducts};
@@ -18,7 +17,6 @@ function App() {
         <Main></Main>
     </div>
     </ProductContext.Provider>
-
   );
 }
 

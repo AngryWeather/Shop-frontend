@@ -1,0 +1,15 @@
+.purchase-data {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 3rem;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .purchase-data {
+        margin: auto;
+    }
+}

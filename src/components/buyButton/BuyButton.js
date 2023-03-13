@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { ProductContext } from "../../ProductContext";
 import "./buyButton.css";
 
@@ -7,7 +7,7 @@ const BuyButton = props => {
     const {products, setProducts} = useContext(ProductContext);
 
     const onClickHandler = () => {
-        setProducts(products.concat(props.product));
+        setProducts(products.concat({product: props.product, quantity: Number(props.quantity)}));
     }
 
 
