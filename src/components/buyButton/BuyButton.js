@@ -5,9 +5,10 @@ import "./buyButton.css";
 const BuyButton = props => {
     // store the product the user wants to buy
     const {products, setProducts} = useContext(ProductContext);
+    console.log(products);
 
     const onClickHandler = () => {
-        setProducts(products.concat(props.product));
+        setProducts(products.concat({product: props.product, quantity: Number(props.quantity)}));
     }
 
 

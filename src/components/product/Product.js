@@ -2,10 +2,13 @@ import BuyButton from "../buyButton/BuyButton";
 import Quantity from "../quantity/Quantity";
 import "./product.css";
 import "../../purchase-data/purchaseData.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { QuantityContext } from "../../QuantityContext";
 
 const Product = props => {
     const [quantity, setQuantity] = useState(0);
+
+    console.log(quantity);
 
     return (
         <ol className="product">
@@ -20,7 +23,7 @@ const Product = props => {
             <div className="purchase-data">
                 {/* pass quantity data to the child component to change it */}
                 <Quantity quantity={quantity} changeQuantity={setQuantity}></Quantity>
-                <BuyButton product={props}></BuyButton>
+                <BuyButton quantity={quantity} product={props}></BuyButton>
             </div>
         </ol>
     );
