@@ -5,8 +5,6 @@ import CartProduct from "../cartProduct/CartProduct";
 const CartProducts = () => {
     const {products} = useContext(ProductContext);
 
-    console.log(products);
-
     return (
         <div className="products">
             {products.map((elem) => (
