@@ -2,8 +2,7 @@ import BuyButton from "../buyButton/BuyButton";
 import Quantity from "../quantity/Quantity";
 import "./product.css";
 import "../../purchase-data/purchaseData.css";
-import { useContext, useState } from "react";
-import { QuantityContext } from "../../QuantityContext";
+import { useState } from "react";
 
 const Product = props => {
     const [quantity, setQuantity] = useState(0);
