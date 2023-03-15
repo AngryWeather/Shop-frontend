@@ -21,7 +21,7 @@ const CartProducts = () => {
             {products.map((elem) => (
                 <CartProduct title={elem.product.title} description={elem.product.description}
                     image={elem.product.image} price={elem.product.price}
-                    quantity={elem.quantity}></CartProduct>
+                    quantity={elem.quantity} key={elem.product.id}></CartProduct>
             ))}
         </div>
     );
