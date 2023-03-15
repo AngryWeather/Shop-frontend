@@ -18,8 +18,8 @@ const Categories = () => {
     return (
         <div className="categories">
             {categories.map((category) => (
-                <ul>
-                    <Category category={category} key={category}></Category>
+                <ul key={category}>
+                    <Category category={category}></Category>
                 </ul>
             ))}
         </div>
