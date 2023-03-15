@@ -9,7 +9,7 @@ const Quantity = props => {
     return (
         <div className="quantity">
             <label htmlFor="quantity-bought">Quantity</label>
-            <input onChange={changeQuantity} id="quantity-bought" type="number" value={props.quantity} min="0"></input>
+            <input onChange={changeQuantity} id="quantity-bought" type="number" value={props.quantity} min="1"></input>
         </div>
     );
 }
