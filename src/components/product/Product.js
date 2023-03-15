@@ -5,7 +5,7 @@ import "../../purchase-data/purchaseData.css";
 import { useState } from "react";
 
 const Product = props => {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
 
     return (
         <ol className="product">
