@@ -8,6 +8,7 @@ const BuyButton = props => {
 
     const onClickHandler = () => {
         setProducts(products.concat({product: props.product, quantity: Number(props.quantity)}));
+        props.changeQuantity(1);
     }
 
 
