@@ -15,11 +15,11 @@ describe("CartProduct component", () => {
 
     it("renders To pay: 28$", () => {
         render(<CartProduct quantity="2" price="14"></CartProduct>)
-        expect(screen.getByText("To pay: 28$")).toBeInTheDocument();
+        expect(screen.getByText("To pay: 28.00$")).toBeInTheDocument();
     })
 
     it("renders To pay: 0$", () => {
         render(<CartProduct quantity="0" price="99"></CartProduct>)
-        expect(screen.getByText("To pay: 0$")).toBeInTheDocument();
+        expect(screen.getByText("To pay: 0.00$")).toBeInTheDocument();
     })
 })
