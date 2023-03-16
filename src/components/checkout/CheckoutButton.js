@@ -1,8 +1,7 @@
 const CheckoutButton = props => {
-    console.log(props);
     return (
         <button>
-            Checkout ({props.length} items)
+            {props.length == 1 ? `Checkout (${props.length} item)` : `Checkout (${props.length} items)`}
         </button>
     );
 }
