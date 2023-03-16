@@ -1,4 +1,5 @@
-import { render } from "@testing-library/react";
+import { findByRole, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { userEvent } from "@testing-library/user-event";
 import CheckoutButton from "./CheckoutButton";
 
 describe("CheckoutButton component", () => {
@@ -15,5 +16,11 @@ describe("CheckoutButton component", () => {
         expect(button).toHaveTextContent("Checkout (6 items)");
     })
 
-
+    it("checks if products are empty on checkout button click", () => {
+        const setProducts = jest.fn();
+        const {getByText} = render(<CheckoutButton length="6" resetProducts={setProducts}></CheckoutButton>);
+        const button = getByText("Checkout (6 items)");
+        fireEvent.click(button);
+        expect(setProducts).toHaveBeenCalledWith([]);
+    })
 })

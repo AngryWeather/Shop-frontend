@@ -5,7 +5,7 @@ import CheckoutButton from "../checkout/CheckoutButton";
 import "./cartProducts.css";
 
 const CartProducts = () => {
-    const {products} = useContext(ProductContext);
+    const {products, setProducts} = useContext(ProductContext);
     const [total, setTotal] = useState(0);
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const CartProducts = () => {
         <div>
             {/* Display total with 2 decimal places */}
             <p className="total">Total: {total.toFixed(2)}$</p>
-            <CheckoutButton length={products.length}></CheckoutButton>
+            <CheckoutButton length={products.length} resetProducts={setProducts}></CheckoutButton>
             <div className="products">
                 {products.map((elem) => (
                     <CartProduct title={elem.product.title} description={elem.product.description}
