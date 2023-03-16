@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../../ProductContext";
 import CartProduct from "../cartProduct/CartProduct";
+import CheckoutButton from "../checkout/CheckoutButton";
 import "./cartProducts.css";
 
 const CartProducts = () => {
@@ -20,6 +21,7 @@ const CartProducts = () => {
         <div>
             {/* Display total with 2 decimal places */}
             <p className="total">Total: {total.toFixed(2)}$</p>
+            <CheckoutButton length={products.length}></CheckoutButton>
             <div className="products">
                 {products.map((elem) => (
                     <CartProduct title={elem.product.title} description={elem.product.description}
