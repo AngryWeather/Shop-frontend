@@ -17,6 +17,6 @@ button:hover {
 
 @media screen and (max-width: 500px) {
   #search-button {
-    padding: 1px;
+    padding: 0.4rem;
   }
 }/*# sourceMappingURL=searchButton.css.map */
