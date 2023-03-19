@@ -1,5 +1,6 @@
 .quantity {
   font-size: 0.7rem;
+  font-family: "DejaVu Serif", "Times New Roman", Times, serif;
   display: flex;
   margin: auto;
   flex-direction: column;

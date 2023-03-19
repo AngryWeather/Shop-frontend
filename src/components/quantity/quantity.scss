@@ -1,16 +1,11 @@
 .quantity {
-    // align-self: center;
     font-size: 0.7rem;
+    font-family: 'DejaVu Serif', 'Times New Roman', Times, serif;
     display: flex;
     margin: auto;
     flex-direction: column;
-    // justify-content: center;
 }
 
 #quantity-bought {
     width: 5rem;
 }
-
-// @media (min-width: 1000px) {
-
-// }

@@ -21,18 +21,20 @@
     gap: 10px;
     padding: 0 20px;
     flex-wrap: wrap;
+    font-family: 'DejaVu Serif', 'Times New Roman', Times, serif;
 }
 
 .title {
     font-weight: 200;
+    font-size: 1em;
 }
 
 .description {
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
 
 .price {
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 @media (max-width: 900px) {
