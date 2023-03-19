@@ -18,7 +18,9 @@ const WomensClothing = () => {
         <div className="products">
             {womensClothing.map((product) => (
                 <Product title={product.title} price={product.price} 
-                    description = {product.description} image={product.image} key={product.id}></Product>
+                    description = {product.description} image={product.image} id={product.id} 
+                    key={product.id}>
+                </Product>
             ))}
         </div>
     );

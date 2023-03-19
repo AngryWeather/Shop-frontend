@@ -27,7 +27,6 @@ const BuyButton = props => {
 
     }
 
-
     return (
         <button className="buy-button" onClick={() => onClickHandler()}>
             Buy

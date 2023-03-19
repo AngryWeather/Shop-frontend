@@ -1,6 +1,6 @@
 const CartProduct = props => {
     return (
-        <ol className="product" key={props.key}>
+        <ol className="product" key={props.id}>
             <li>
                 <img src={props.image} height="128" width="128" alt={props.title}></img>
             </li>

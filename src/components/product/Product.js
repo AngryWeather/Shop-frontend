@@ -20,7 +20,9 @@ const Product = props => {
             <div className="purchase-data">
                 {/* pass quantity data to the child component to change it */}
                 <Quantity quantity={quantity} changeQuantity={setQuantity}></Quantity>
-                <BuyButton quantity={quantity} product={props} changeQuantity={setQuantity}></BuyButton>
+                <BuyButton quantity={quantity} product={props} key={props.id} 
+                    changeQuantity={setQuantity}>
+                </BuyButton>
             </div>
         </ol>
     );
