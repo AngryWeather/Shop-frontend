@@ -24,7 +24,6 @@ const BuyButton = props => {
 
         // reset quantity input field to 1
         props.changeQuantity(1);
-
     }
 
     return (
