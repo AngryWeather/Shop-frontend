@@ -1,8 +1,34 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import Quantity from "../quantity/Quantity";
+import { ProductContext } from "../../ProductContext";
 
 const CartProduct = props => {
+    const {products, setProducts} = useContext(ProductContext);
     const [quantity, setQuantity] = useState(props.quantity);
+   
+    useEffect(() => {
+        let arr = [...products];
+        
+        const getIndexOfCartProduct = () => {
+            return products.findIndex(product => product.product.title === props.title);
+        }
+
+        const updateQuantity = () => {
+            let index = getIndexOfCartProduct();
+            let productQuantity = Number(products[index]["quantity"]);
+    
+            if (productQuantity > quantity) {
+                // subtract the difference between last quantity and the new one
+                arr[index]["quantity"] = productQuantity - (productQuantity - quantity);
+            } else if (productQuantity < quantity) {
+                arr[index]["quantity"] = productQuantity + (quantity - productQuantity);
+            }
+    
+            setProducts(arr);
+        }
+
+        updateQuantity();
+    }, [quantity]);
 
     return (
         <ol className="product" key={props.id}>
