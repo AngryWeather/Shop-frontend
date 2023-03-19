@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ProductContext } from "../../ProductContext";
 import "./buyButton.css";
 
@@ -13,7 +13,7 @@ const BuyButton = props => {
     const onClickHandler = () => {
         let index = getIndexOfCartProduct();
 
-        if (index != -1) {
+        if (index !== -1) {
             /* instead of adding the same product to the cart
             copy products array and update quantity object with the new value */
             let arr = [...products];
