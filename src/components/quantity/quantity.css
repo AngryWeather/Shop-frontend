@@ -2,10 +2,18 @@
   font-size: 0.7rem;
   font-family: "DejaVu Serif", "Times New Roman", Times, serif;
   display: flex;
-  margin: auto;
   flex-direction: column;
+  margin: auto;
 }
 
 #quantity-bought {
   width: 5rem;
+}
+
+.quantity-cart {
+  font-size: 0.7rem;
+  font-family: "DejaVu Serif", "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
 }/*# sourceMappingURL=quantity.css.map */
