@@ -6,7 +6,7 @@ describe("CartProduct component", () => {
     it("renders Quantity: 2", () => {
         render(<CartProduct quantity="2"></CartProduct>)
         const input = screen.getByLabelText("Quantity");
-        fireEvent.change(input, {target: {value: "2"}});
+        fireEvent.change(input, {target: {value: "3"}});
         expect(input.value).toBe("3");
     }),
 
