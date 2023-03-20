@@ -14,10 +14,11 @@ Click "Store" located on the left in the header to quickly see the homepage.<br>
 
 ## Categories
 There are four categories to choose from:
-    - electronics
-    - jewelery
-    - men's clothing
-    - women's clothing<br><br>
+- electronics
+- jewelery
+- men's clothing
+- women's clothing
+ 
 ![categories](https://user-images.githubusercontent.com/105065960/226219083-fe4d4971-4564-45e6-bcab-28b5eb586a43.png)<br><br>
 For example, clicking on the "electronics" link will display all products from that category.<br><br>
 ![electronics](https://user-images.githubusercontent.com/105065960/226219402-88b4a571-86a1-4692-be59-045a7aef2307.png)<br><br>
