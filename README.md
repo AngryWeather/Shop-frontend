@@ -34,5 +34,19 @@ In order to add the product to cart enter the quantity you wish to buy, and clic
 On wider screens it's located to the right of the product.<br><br>
 ![product data and quantity input with buy button wide screens](https://user-images.githubusercontent.com/105065960/226220989-51c91993-52e2-4465-96de-952b82d8cf18.png)<br><br>
 On smaller screens it's located at the bottom of the product.<br><br>
-![product data and quantity input with buy button tablet](https://user-images.githubusercontent.com/105065960/226221191-459d19ca-8bdc-47c6-a863-0333d60b90bb.png)<br><br>
-![product data and quantity input with buy button smartphone](https://user-images.githubusercontent.com/105065960/226221411-32816cc8-9ae7-406a-ab0f-fa4c090753b4.png)<br><br>
+![image](https://user-images.githubusercontent.com/105065960/226221880-3eeb0910-cddd-4e6c-82a9-63d4614a7a4e.png)
+
+5. Cart<br><br>
+Click on "Cart" on the right side of the header to see the products you added.<br><br>
+![cart](https://user-images.githubusercontent.com/105065960/226222044-0003344a-9d44-4441-aaeb-e08eeb9f0e1f.png)<br><br>
+You can see the quantity you bought and the price to pay.<br><br>
+![cart product](https://user-images.githubusercontent.com/105065960/226222204-6d5f3a72-2b3c-4138-a630-75f8d1e6c389.png)<br><br>
+At the top the total price is displayed.<br><br>
+![total price](https://user-images.githubusercontent.com/105065960/226222311-f11c9aed-62eb-46d1-942d-365304310fba.png)<br><br>
+To buy the products in your cart click "Checkout (n items)" button.<br>
+Please note, that the website doesn't accept payments, so clicking the button will just remove products from your cart.<br><br>
+![Checkout button](https://user-images.githubusercontent.com/105065960/226222546-112c0a77-6302-4cc7-865d-fd4f17eec3f4.png)<br><br>
+![cart after checkout](https://user-images.githubusercontent.com/105065960/226222865-0c98a284-1eee-4a88-afb0-270ec832c05e.png)<br><br>
+If you want you can change the quantity to buy, and the product's price as well as total price will be updated right away.<br><br>
+![updated quantity](https://user-images.githubusercontent.com/105065960/226222779-b2f4b7eb-03d9-4e51-b32e-816deb1d9b71.png)<br><br>
+![updated total price](https://user-images.githubusercontent.com/105065960/226222811-33b1af4c-4f8d-40c5-b4d7-c4779bfa6869.png)<br><br>
