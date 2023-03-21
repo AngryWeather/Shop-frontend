@@ -1,6 +1,6 @@
 const RemoveButton = () => {
     return (
-        <div>
+        <div className="center">
             <button className="buy-button">X</button>
         </div>
     );

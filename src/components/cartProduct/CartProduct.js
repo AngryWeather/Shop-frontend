@@ -38,7 +38,9 @@ const CartProduct = props => {
             </li>
             <div className="data">
                 <li className="title">{props.title}</li>
-                <Quantity quantityClass={"quantity-cart"} quantity={quantity} changeQuantity={setQuantity}></Quantity>
+                <Quantity quantityClass={"quantity-cart"} quantity={quantity} 
+                    changeQuantity={setQuantity}>
+                </Quantity>
                 <RemoveButton></RemoveButton>
                 <li className="price">To pay: {(props.price * quantity).toFixed(2)}$</li>
                 <li className="description">{props.description}</li>
