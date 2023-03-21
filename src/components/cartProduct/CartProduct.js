@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import Quantity from "../quantity/Quantity";
 import { ProductContext } from "../../ProductContext";
+import RemoveButton from "../remove-button/RemoveButton";
 
 const CartProduct = props => {
     const {products, setProducts} = useContext(ProductContext);
@@ -38,6 +39,7 @@ const CartProduct = props => {
             <div className="data">
                 <li className="title">{props.title}</li>
                 <Quantity quantityClass={"quantity-cart"} quantity={quantity} changeQuantity={setQuantity}></Quantity>
+                <RemoveButton></RemoveButton>
                 <li className="price">To pay: {(props.price * quantity).toFixed(2)}$</li>
                 <li className="description">{props.description}</li>
             </div>
