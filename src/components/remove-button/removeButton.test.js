@@ -7,4 +7,10 @@ describe("RemoveButton", () => {
         const button = screen.getByRole("button");
         expect(button).toHaveTextContent("X");
     })
+
+    it("Checks if it has button class", () => {
+        render(<RemoveButton></RemoveButton>);
+        const button = screen.getByRole("button");
+        expect(button).toHaveClass("buy-button");
+    })
 })
