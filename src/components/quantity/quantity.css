@@ -8,6 +8,7 @@
 
 #quantity-bought {
   width: 5rem;
+  padding-right: 0;
 }
 
 .quantity-cart {
